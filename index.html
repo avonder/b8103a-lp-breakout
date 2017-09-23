@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Breakout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="myCanvas" width="640" height="480"></canvas>
+
+<div class="dropdown">
+<button id="setBtn" class="btn">Settings</button>
+  <div id="setDropdown" class="dropdown-content">
+    <div id="slidecontainer">
+  	<input type="range" min="1" max="20" value="10" class="slider" id="ballRadSlider">
+  	<p>Ball size: <span id="radValue"></span></p>
+  	</div>
+  	<div id="slidecontainer">
+  	<input type="range" min="25" max="200" value="70" class="slider" id="paddleWidthSlider">
+  	<p>Paddle width: <span id="pwValue"></span></p>	
+  	</div>
+  	<div id="slidecontainer">
+  	<input type="range" min="0" max="40" value="8" class="slider" id="brickXSlider">
+  	<p>Brick speed: <span id="bxValue"></span></p>	
+  	</div>
+  	<div id="slidetext">
+  	<p>Changing brick parameters<br>resets the field.</p>
+  	</div>
+  	<div id="slidecontainer">
+  	<input type="range" min="5" max="200" value="30" class="slider" id="brickWidthSlider">
+  	<p>Brick width: <span id="bwValue"></span></p>
+  	</div>
+  	<div id="slidecontainer">
+  	<input type="range" min="1" max="40" value="16" class="slider" id="columnCountSlider">
+  	<p>Column count: <span id="ccValue"></span></p>
+  	</div>
+  </div>
+</div>
+<button id="pBtn" class="btn">Pause</button>
+<button id="resBtn" class="btn">Restart</button>
+<div id="winText" class="annText"><p>You Win!</p></div>
+<div id="loseText" class="annText"><p>You Lose.</p></div>
+<div id="overlapWarnText" class="warnText"><p>Warning: overlap.</p></div>
+<script src="script.js"></script>
+</body>
+</html>
